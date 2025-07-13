@@ -1,45 +1,49 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f5ff;
+  background-color: #f9f6fb;
   color: #333;
-  margin: 0;
-  padding: 2rem;
+  padding: 20px;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
   color: #6a0dad;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .materia {
-  border: 2px solid #d1b3ff;
-  border-radius: 8px;
-  padding: 1rem;
-  background-color: #eee0ff;
-  transition: 0.3s ease;
+  background-color: #e9d8f7;
+  border: 2px solid #d1a9f9;
+  border-radius: 12px;
+  padding: 12px 16px;
+  text-align: left;
+  transition: background-color 0.3s, opacity 0.3s;
 }
 
-.materia label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  color: #4b0082;
+.materia.bloqueada {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.materia.habilitada {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.materia.aprobada {
+  background-color: #c79ee8;
+  text-decoration: line-through;
 }
 
 .materia input[type="checkbox"] {
   transform: scale(1.2);
-  cursor: pointer;
-}
-
-.bloqueada {
-  opacity: 0.5;
-  pointer-events: none;
+  margin-right: 10px;
 }
