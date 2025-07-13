@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f5ff;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #6a0dad;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.materia {
+  border: 2px solid #d1b3ff;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #eee0ff;
+  transition: 0.3s ease;
+}
+
+.materia label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #4b0082;
+}
+
+.materia input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.bloqueada {
+  opacity: 0.5;
+  pointer-events: none;
+}
