@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva - Ingeniería Industrial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Malla Interactiva - Ingeniería Industrial</h1>
+  <div class="grid">
+
+    <!-- PRIMER AÑO -->
+    <div class="materia" id="analisis1" data-year="1" data-unlocks="analisis2,fisica2,probabilidad,economia">
+      <label><input type="checkbox"> Análisis Matemático I</label>
+    </div>
+
+    <div class="materia" id="algebra" data-year="1" data-unlocks="analisis2,admin,probabilidad">
+      <label><input type="checkbox"> Álgebra y Geometría Analítica</label>
+    </div>
+
+    <div class="materia" id="ingenieria" data-year="1" data-unlocks="economia,admin">
+      <label><input type="checkbox"> Ingeniería y Sociedad</label>
+    </div>
+
+    <div class="materia" id="info1" data-year="1" data-unlocks="info2">
+      <label><input type="checkbox"> Informática I</label>
+    </div>
+
+    <div class="materia" id="sistemas" data-year="1">
+      <label><input type="checkbox"> Sistemas de Representación</label>
+    </div>
+
+    <div class="materia" id="quimica" data-year="1" data-unlocks="materiales">
+      <label><input type="checkbox"> Química General</label>
+    </div>
+
+    <div class="materia" id="fisica1" data-year="1" data-unlocks="fisica2,materiales,electrotecnia">
+      <label><input type="checkbox"> Física I</label>
+    </div>
+
+    <div class="materia" id="pensamiento" data-year="1" data-unlocks="economia,admin">
+      <label><input type="checkbox"> Pensamiento Sistémico</label>
+    </div>
+
+    <!-- SEGUNDO AÑO -->
+    <div class="materia bloqueada" id="analisis2" data-year="2" data-unlocks="investigacion,mecanica,mecanica-fluidos,resistencia,calculo">
+      <label><input type="checkbox" disabled> Análisis Matemático II</label>
+    </div>
+
+    <div class="materia bloqueada" id="admin" data-year="2" data-unlocks="costos,estudio,comercializacion,economia-empresa,evaluacion,procesos,seguridad,planificacion,diseno">
+      <label><input type="checkbox" disabled> Administración General</label>
+    </div>
+
+    <div class="materia bloqueada" id="materiales" data-year="2" data-unlocks="resistencia">
+      <label><input type="checkbox" disabled> Ciencia de los Materiales</label>
+    </div>
+
+    <div class="materia bloqueada" id="economia" data-year="2" data-unlocks="economia-empresa,control,costos,comercializacion,evaluacion,diseno">
+      <label><input type="checkbox" disabled> Economía General</label>
+    </div>
+
+    <div class="materia bloqueada" id="fisica2" data-year="2" data-unlocks="termo,electrotecnia">
+      <label><input type="checkbox" disabled> Física II</label>
+    </div>
+
+    <div class="materia bloqueada" id="probabilidad" data-year="2" data-unlocks="investigacion,estudio,comercializacion,evaluacion,seguridad,planificacion,diseno">
+      <label><input type="checkbox" disabled> Probabilidad y Estadística</label>
+    </div>
+
+    <div class="materia bloqueada" id="info2" data-year="2" data-unlocks="diseno">
+      <label><input type="checkbox" disabled> Informática II</label>
+    </div>
+
+    <div class="materia bloqueada" id="ingles1" data-year="2" data-unlocks="ingles2">
+      <label><input type="checkbox" disabled> Inglés I</label>
+    </div>
+
+    <!-- TERCER AÑO -->
+    <div class="materia bloqueada" id="costos" data-year="3" data-unlocks="evaluacion">
+      <label><input type="checkbox" disabled> Costos y Presupuestos</label>
+    </div>
+
+    <div class="materia bloqueada" id="estudio" data-year="3" data-unlocks="seguridad,procesos,planificacion,evaluacion,manejo,comercio,relaciones,calidad">
+      <label><input type="checkbox" disabled> Estudio del Trabajo</label>
+    </div>
+
+    <div class="materia bloqueada" id="comercializacion" data-year="3" data-unlocks="diseno,evaluacion,comercio">
+      <label><input type="checkbox" disabled> Comercialización</label>
+    </div>
+
+    <div class="materia bloqueada" id="termo" data-year="3" data-unlocks="procesos,instalaciones,mantenimiento">
+      <label><input type="checkbox" disabled> Termodinámica y Máquinas Térmicas</label>
+    </div>
+
+    <div class="materia bloqueada" id="resistencia" data-year="3" data-unlocks="instalaciones">
+      <label><input type="checkbox" disabled> Estática y Resistencia de Materiales</label>
+    </div>
+
+    <div class="materia bloqueada" id="mecanica-fluidos" data-year="3" data-unlocks="instalaciones">
+      <label><input type="checkbox" disabled> Mecánica de los Fluidos</label>
+    </div>
+
+    <div class="materia bloqueada" id="economia-empresa" data-year="3" data-unlocks="control,evaluacion,comercio">
+      <label><input type="checkbox" disabled> Economía de la Empresa</label>
+    </div>
+
+    <div class="materia bloqueada" id="electrotecnia" data-year="3" data-unlocks="instalaciones,procesos,mantenimiento">
+      <label><input type="checkbox" disabled> Electrotecnia y Máquinas Eléctricas</label>
+    </div>
+
+    <div class="materia bloqueada" id="calculo" data-year="3" data-unlocks="investigacion">
+      <label><input type="checkbox" disabled> Análisis Numérico y Cálculo Avanzado</label>
+    </div>
+
+    <!-- CUARTO AÑO -->
+    <div class="materia bloqueada" id="seguridad" data-year="4">
+      <label><input type="checkbox" disabled> Seguridad, Higiene e Ingeniería Ambiental</label>
+    </div>
+
+    <div class="materia bloqueada" id="investigacion" data-year="4">
+      <label><input type="checkbox" disabled> Investigación Operativa</label>
+    </div>
+
+    <div class="materia bloqueada" id="procesos" data-year="4">
+      <label><input type="checkbox" disabled> Procesos Industriales</label>
+    </div>
+
+    <div class="materia bloqueada" id="mecanica" data-year="4" data-unlocks="manejo">
+      <label><input type="checkbox" disabled> Mecánica y Mecanismos</label>
+    </div>
+
+    <div class="materia bloqueada" id="evaluacion" data-year="4" data-unlocks="comercio">
+      <label><input type="checkbox" disabled> Evaluación de Proyectos</label>
+    </div>
+
+    <div class="materia bloqueada" id="planificacion" data-year="4">
+      <label><input type="checkbox" disabled> Planificación y Control de la Producción</label>
+    </div>
+
+    <div class="materia bloqueada" id="diseno" data-year="4">
+      <label><input type="checkbox" disabled> Diseño del Producto</label>
+    </div>
+
+    <div class="materia bloqueada" id="ingles2" data-year="4">
+      <label><input type="checkbox" disabled> Inglés II</label>
+    </div>
+
+    <!-- QUINTO AÑO -->
+    <div class="materia bloqueada" id="mantenimiento" data-year="5">
+      <label><input type="checkbox" disabled> Mantenimiento</label>
+    </div>
+
+    <div class="materia bloqueada" id="manejo" data-year="5">
+      <label><input type="checkbox" disabled> Manejo de Materiales y Distribución de Plantas</label>
+    </div>
+
+    <div class="materia bloqueada" id="comercio" data-year="5">
+      <label><input type="checkbox" disabled> Comercio Exterior</label>
+    </div>
+
+    <div class="materia bloqueada" id="relaciones" data-year="5">
+      <label><input type="checkbox" disabled> Relaciones Industriales</label>
+    </div>
+
+    <div class="materia bloqueada" id="calidad" data-year="5">
+      <label><input type="checkbox" disabled> Ingeniería de Calidad</label>
+    </div>
+
+    <div class="materia bloqueada" id="control" data-year="5">
+      <label><input type="checkbox" disabled> Control de Gestión</label>
+    </div>
+
+    <div class="materia bloqueada" id="instalaciones" data-year="5">
+      <label><input type="checkbox" disabled> Instalaciones Industriales</label>
+    </div>
+
+    <div class="materia bloqueada" id="legislacion" data-year="5">
+      <label><input type="checkbox" disabled> Legislación</label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
